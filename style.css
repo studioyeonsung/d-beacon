@@ -1,0 +1,110 @@
+@font-face {
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+canvas {
+	z-index: -3;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  /* background: #000000;
+  color: #FAF0E6; */
+}
+
+::selection {
+  /* background: #000000;
+  color: #FAF0E6; */
+}
+
+body{
+  /* font-family: 'Arial Black', Gadget, sans-serif; */
+  font-family: Verdana, sans-serif;
+
+}
+header{
+  /* z-index: -3; */
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+
+}
+
+nav{
+  z-index: 3;
+  font-weight: bold;
+}
+
+.pointerplate{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 10px;
+  margin-bottom: 10vh;
+  /* overflow: hidden; */
+}
+.plate{
+  height: 13vh;
+  width: 13vh;
+  position: relative;
+  overflow: hidden;
+  /* bottom: 0;
+  left: 50%; */
+  margin-top: -6.5vh;
+  z-index: 102;
+  margin-left: -6.5vh;
+  display: inline-block;
+  /* opacity: 1; */
+  pointer-events: none;
+  border: solid 1px #000000;
+  background-color: #000000;
+  border-radius: 50%;
+  /* transform: translateX(-50%) translateY(-50%); */
+}
+.pointer {
+  height: 4vh;
+  width: 4vh;
+  position: absolute;
+  /* bottom: 0;
+  left: 50%; */
+  /* margin-top: -3.25vh; */
+  z-index: 103;
+  margin-top: -5.5vh;
+  margin-left: -3.5vh;
+  opacity: 1;
+  pointer-events: none;
+  /* border: solid 1px #000000; */
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* transform: rotateZ(45deg); */
+  /* transition: all .5s ease; */
+  /* transition: all 300ms ease-out; */
+}
+
+/* #pointer{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  margin-top: -15px;
+  margin-left: -15px;
+} */
+
+/* #plate{
+  height: 65px;
+  width: 65px;
+  position: fixed;
+  margin-top: -32.5px;
+  margin-left: -32.5px;
+} */
