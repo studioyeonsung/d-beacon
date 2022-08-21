@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
     randomSeed(rs);
-    background("white");
+    background('white');
     time = (frameCount % frames) / float(frames);
     for (var i = 0; i < num; i++) {
         drawBubble(i);
