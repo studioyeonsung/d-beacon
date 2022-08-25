@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="wheel.js"></script> -->
-  <script src="sketch.js"></script>
+  <script src="wheel.js"></script>
+  <!-- <script src="sketch.js"></script> -->
   <script src="p5/p5.min.js"></script>
   <script src="p5/p5.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
@@ -22,8 +22,22 @@
   </header>
   <main>
     <div class="content-wrapper">
-
       <div class="media-container">
+        <div class="img-container">
+          <img id="particle01" class="particles" src="images/heavymetalparticle.png" alt="heavymetalparticle.png" title="">
+          <img id="particle02" class="particles" src="images/inorganic1.png" alt="inorganic1.png" title="">
+          <img id="particle03" class="particles" src="images/inorganic2.png" alt="inorganic2.png" title="">
+          <img id="particle04" class="particles" src="images/particlesfromburninggarbage.png" alt="particlesfromburninggarbage.png" title="">
+          <img id="particle05" class="particles" src="images/particlesfromburningproduce.png" alt="particlesfromburningproduce.png" title="">
+          <img id="particle06" class="particles" src="images/particlesfromtabaccosmoke.png" alt="particlesfromtabaccosmoke.png" title="">
+          <img id="particle07" class="particles" src="images/particlesfromvehicleemission.png" alt="particlesfromvehicleemission.png" title="">
+          <img id="particle08" class="particles" src="images/roaddust.png" alt="roaddust.png" title="">
+          <img id="particle09" class="particles" src="images/yellowdustfromchina.png" alt="yellowdustfromchina.png" title="">
+          <!-- <img id="particle10" class="particles" src="images/" alt="" title=""> -->
+        </div>
+      </div>
+
+      <!-- <div class="media-container">
         <div class="img-container">
           <img src="https://shop1.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop1.daumcdn.net%2Fshophow%2Fp%2FL17819690038.jpg%3Fut%3D20220612155639" alt="image01">
           <img src="https://static.coupangcdn.com/image/vendor_inventory/6339/06e3a3a6e84e145dd19e52698a600109a3b8c540a35af6411fd6d2a80080.jpg" alt="image02">
@@ -46,11 +60,11 @@
           <img src="https://img.danawa.com/prod_img/500000/824/673/img/11673824_1.jpg?shrink=500:500&_v=20200626154703" alt="image19">
           <img src="https://img.danawa.com/prod_img/500000/322/845/img/9845322_1.jpg?shrink=500:500&_v=20210315172829" alt="image20">
           <img src="http://img1.tmon.kr/cdn3/deals/2019/12/04/2790998914/2790998914_front_02ca732daf.jpg" alt="image21">
-          <!-- <img src="" alt="image01"> -->
-        </div>
-      </div><br>
 
-      <div class="contents">
+        </div>
+      </div><br> -->
+
+      <!-- <div class="contents">
         <div class="contentbox">1 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
         <div class="contentbox">2 Quo aliquam, debitis officia culpa laborum quidem </div>
         <div class="contentbox">3 perspiciatis aspernatur ullam a magni numquam quisquam </div>
@@ -81,7 +95,7 @@
         <div class="contentbox">28 suscipit velit omnis sequi soluta aut tempore harum.</div>
         <div class="contentbox">29 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
         <div class="contentbox">30 Quo aliquam, debitis officia culpa laborum quidem </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -93,46 +107,46 @@
       <h2 id="nav-indicator">100</h2>
       <br>
       <div id="particle-nav">
+        <img src="images/pointer.svg" alt="pointer.svg">
       </div>
       <!-- <input type="range" min="1" max="100" value="50" id="range"> -->
       <script>
+      //////
+      // function zoom(event) {
+      //   event.preventDefault();
+      //   scale += event.deltaY * -0.01;
+      //   // Restrict scale
+      //   scale = Math.min(Math.max(0.5, scale), 5);
+      //   // Apply scale transform
+      //   el.style.transform = scale(${scale});
+      // }
+      // let scale = 1;
+      // const el = document.querySelector('#particle-nav');
+      // el.onwheel = zoom;
         ///////
         const scrollContainer = document.querySelector(".content-wrapper");
         scrollContainer.addEventListener("wheel", (evt) => {
           evt.preventDefault();
           scrollContainer.scrollLeft += evt.deltaY;
         });
-        ////////
-        document.getElementById("particle-nav").addEventListener("wheel", myFunction);
+        ///////
+
+
+        // document.getElementById("particle-nav").addEventListener("wheel", myFunction);
         // function myFunction() {
-        //  this.style.fontSize = "35px";
+        //   var y = event.deltaY;
+        //   var currentSize = event.target.style.width;
+        //   if (y > 0) {
+        //     newSize = parseInt(currentSize) + 10;
+        //   } else {
+        //     newSize = parseInt(currentSize) - 10;
+        //   }
+        //   event.target.style.width = newSize + "px";
+        //   event.target.style.height = newSize + "px";
+        //   // event.getElementById("particle-nav").style.width = newSize + "px";
+        //   // event.getElementById("particle-nav").style.height = newSize + "px";
+        //   // document.getElementById("particle-nav").innerHTML = y;
         // }
-        function myFunction() {
-          var y = event.deltaY;
-          var currentSize = event.target.style.width;
-          if (y > 0) {
-            newSize = parseInt(currentSize) + 10;
-          } else {
-            newSize = parseInt(currentSize) - 10;
-          }
-          event.target.style.width = newSize + "px";
-          event.target.style.height = newSize + "px";
-          // event.getElementById("particle-nav").style.width = newSize + "px";
-          // event.getElementById("particle-nav").style.height = newSize + "px";
-          document.getElementById("particle-nav").innerHTML = y;
-        }
-        //////////////
-        // function zoom(event) {
-        //   event.preventDefault();
-        //   scale += event.deltaY * -0.01;
-        //   // Restrict scale
-        //   scale = Math.min(Math.max(0.5, scale), 5);
-        //   // Apply scale transform
-        //   el.style.transform = `scale(${scale})`;
-        // }
-        // let scale = 1;
-        // const el = document.querySelector('#particle-nav');
-        // el.onwheel = zoom;
 
         ////
         // var slider = document.getElementById("range");
