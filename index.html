@@ -24,8 +24,18 @@
     <div class="content-wrapper">
       <div class="media-container">
         <div class="img-container">
-          <img id="particle01" class="particles" src="images/heavymetalparticle.png" alt="heavymetalparticle.png" title="">
-          <img id="particle02" class="particles" src="images/inorganic1.png" alt="inorganic1.png" title="">
+          <img id="particle01" class="particles" href="#myModal01" src="images/heavymetalparticle.png" alt="heavymetalparticle.png" title="">
+          <div id="myModal01" class="modal">
+            <div class="modal-content">
+              bla bla bla bla blabla bla bla bla blabla bla bla bla bla
+            </div>
+          </div>
+          <img id="particle02" class="particles" href="#myModal02" src="images/inorganic1.png" alt="inorganic1.png" title="">
+          <div id="myModal02" class="modal">
+            <div class="modal-content">
+              bla bla bla bla bla
+            </div>
+          </div>
           <img id="particle03" class="particles" src="images/inorganic2.png" alt="inorganic2.png" title="">
           <img id="particle04" class="particles" src="images/particlesfromburninggarbage.png" alt="particlesfromburninggarbage.png" title="">
           <img id="particle05" class="particles" src="images/particlesfromburningproduce.png" alt="particlesfromburningproduce.png" title="">
@@ -109,57 +119,49 @@
       <div id="particle-nav">
         <img src="images/pointer.svg" alt="pointer.svg">
       </div>
-      <!-- <input type="range" min="1" max="100" value="50" id="range"> -->
       <script>
-      //////
-      // function zoom(event) {
-      //   event.preventDefault();
-      //   scale += event.deltaY * -0.01;
-      //   // Restrict scale
-      //   scale = Math.min(Math.max(0.5, scale), 5);
-      //   // Apply scale transform
-      //   el.style.transform = scale(${scale});
-      // }
-      // let scale = 1;
-      // const el = document.querySelector('#particle-nav');
-      // el.onwheel = zoom;
-        ///////
-        const scrollContainer = document.querySelector(".content-wrapper");
-        scrollContainer.addEventListener("wheel", (evt) => {
-          evt.preventDefault();
-          scrollContainer.scrollLeft += evt.deltaY;
-        });
-        ///////
+        // const scrollContainer = document.querySelector(".content-wrapper");
+        // scrollContainer.addEventListener("wheel", (evt) => {
+        //   evt.preventDefault();
+        //   scrollContainer.scrollLeft += evt.deltaY;
+        // });
 
+        // Get the button that opens the modal
+        var btn = document.querySelectorAll("img.particles");
 
-        // document.getElementById("particle-nav").addEventListener("wheel", myFunction);
-        // function myFunction() {
-        //   var y = event.deltaY;
-        //   var currentSize = event.target.style.width;
-        //   if (y > 0) {
-        //     newSize = parseInt(currentSize) + 10;
-        //   } else {
-        //     newSize = parseInt(currentSize) - 10;
-        //   }
-        //   event.target.style.width = newSize + "px";
-        //   event.target.style.height = newSize + "px";
-        //   // event.getElementById("particle-nav").style.width = newSize + "px";
-        //   // event.getElementById("particle-nav").style.height = newSize + "px";
-        //   // document.getElementById("particle-nav").innerHTML = y;
-        // }
+        // All page modals
+        var modals = document.querySelectorAll('.modal');
 
-        ////
-        // var slider = document.getElementById("range");
-        // slider.addEventListener("wheel", function(e) {
-        //   if (e.deltaY < 0) {
-        //     slider.valueAsNumber += 1;
-        //   } else {
-        //     slider.value -= 1;
-        //   }
-        //   e.preventDefault();
-        //   e.stopPropagation();
-        // })
-        //////
+        // Get the <span> element that closes the modal
+        var spans = document.getElementsByClassName("close");
+
+        // When the user clicks the button, open the modal
+        for (var i = 0; i < btn.length; i++) {
+         btn[i].onclick = function(e) {
+            e.preventDefault();
+            modal = document.querySelector(e.target.getAttribute("href"));
+            modal.style.display = "block";
+         }
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        for (var i = 0; i < spans.length; i++) {
+         spans[i].onclick = function() {
+            for (var index in modals) {
+              if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+         }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+             for (var index in modals) {
+              if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+             }
+            }
+        }
+
       </script>
 
     </div>
