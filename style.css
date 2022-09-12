@@ -252,6 +252,11 @@ nav{
   filter: drop-shadow(0 0 0.5rem #0000FF);
   animation: zoom-in-zoom-out 2s ease infinite;
 }
+button{
+  display: inline-block;
+  border: none;
+  background-color: none;
+}
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
