@@ -22,29 +22,28 @@ html{
 }
 
 ::-moz-selection { /* Code for Firefox */
-  /* background: #000000;
-  color: #FAF0E6; */
+  background: #000000;
+  color: #FFFAFA;
 }
 
 ::selection {
-  /* background: #000000;
-  color: #FAF0E6; */
+  background: #000000;
+  color: #FFFAFA;
 }
 
 body{
-  /* font-family: 'Arial Black', Gadget, sans-serif; */
   font-family: Verdana, sans-serif;
   z-index: 1;
-  /* background: linear-gradient(to right, lightgray, lightsteelblue); */
   height: 100%;
+  width: 100%;
   margin: 0;
-  /* overflow: scroll; */
-  /* overflow: clip; */
   contain: content;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFFAFA
+  /* background: #FFFAFA */
+  /* background-color: #7FFF00; */
+  background-color: #0000FF;
 }
 css-doodle{
 }
@@ -53,32 +52,29 @@ header{
   padding: 10px;
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  align-content: center;
-  align-self: center; */
   justify-content: space-around;
   font-weight: bold;
   position: fixed;
   top: 0;
-  /* left: 0; */
   text-align: center;
+  width: 100%;
+  color: #FFFAFA;
 }
 main{
   position: absolute;
   top: 15vh;
   left: 0;
-  /* overflow-y: scroll; */
 }
 
-nav{
+/* nav{
   position: fixed;
   z-index: 100;
   font-weight: bold;
   bottom: 0;
   left: 0;
-}
+} */
 
-.pointerplate{
+/* .pointerplate{
   position: fixed;
   bottom: 0;
   margin: 0 auto;
@@ -86,9 +82,8 @@ nav{
   text-align: center;
   padding: 10px;
   text-align: center;
-  /* background-color: #ff0000; */
   z-index: 102;
-}
+} */
 
 /* .plate{
   margin: 0 auto;
@@ -121,26 +116,24 @@ nav{
   transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
 } */
-#nav-indicator{
+/* #nav-indicator{
   position: absolute;
   transform: translateX(-50%);
   margin: 0 auto;
   top: 0;
   left: 50%;
   z-index: 103;
-}
-#particle-nav{
+} */
+/* #particle-nav{
   width: 150px;
   height: 150px;
-  /* background-color: rgba(0,0,0,0.3); */
   padding: 5px;
   margin: 0 auto;
-  /* border-radius: 50%; */
+
   z-index: 103;
-  /* transform-origin: 0px 0px;
-  transform: scale(1) translate(0px, 0px); */
+
   cursor: grab;
-}
+} */
 
 /* @keyframes zoom-in-zoom-out {
   0% {
@@ -173,40 +166,23 @@ nav{
 .content-wrapper{
   margin-top: 10px;
   width: 98vw;
-  /* height: 70vh; */
   top: 0;
   left: 0;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center; */
-  /* min-height: 100vh; */
   min-width: 50vw;
 }
 .contents{
   margin: 10px auto;
   width: 100%;
-  /* height: 100%; */
   height: 35vh;
   margin: 10px;
-  /* display: flex;
-  flex-direction: row; */
-  /* overflow-x: auto;
-  overflow-y: hidden; */
   z-index: 2;
   padding: 10px;
-  /* flex-wrap: nowrap; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
 }
 .contentbox{
   margin: 10px;
   padding: 10px;
   min-width: 300px;
   z-index: 3;
-  border: 1px solid #DCDCDC;
   border-radius: 50%;
 }
 .media-container{
@@ -222,34 +198,19 @@ nav{
   overflow-y: hidden; */
 }
 .img-container{
-  /* position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: flex-start;
-  width: 80%;
-  height: 100%;
-  margin: 100px auto; */
+
   z-index: 2;
   text-align: center;
   position: relative;
 }
-/* .img-container img{
-  width: 150px;
-  margin: 20px;
-  padding: 10px;
-  z-index: 2;
-  opacity: 0.5;
-} */
+
 .particles{
   position: absolute;
   width: 150px;
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
-  filter: drop-shadow(0 0 0.5rem #0000FF);
+  filter: drop-shadow(0 0 0.5rem #FFFAFA);
   animation: zoom-in-zoom-out 2s ease infinite;
 }
 button{
@@ -285,7 +246,7 @@ button{
   left: 55vw;
 }
 #particle05, #myModal05{
-  top: 65vh;
+  top: 63vh;
   left: 15vw;
 }
 #particle06, #myModal06{
