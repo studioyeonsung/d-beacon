@@ -58,6 +58,10 @@ header{
   color: #000000;
   font-size: 1.5rem;
 }
+header a{
+  text-decoration: none;
+  color: #000000;
+}
 nav{
   top: 0;
   right: 0;
@@ -71,6 +75,10 @@ nav{
   position:fixed;
   justify-content: space-around;
   font-size: 1.5rem;
+}
+nav a{
+  text-decoration: none;
+  color: #FFFAFA;
 }
 main{
   width: 100%;
