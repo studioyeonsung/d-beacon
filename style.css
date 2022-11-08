@@ -42,6 +42,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: #000000;
+
 }
 
 header{
@@ -75,20 +76,24 @@ nav{
   position:fixed;
   justify-content: space-around;
   font-size: 1.5rem;
+  position: fixed;
 }
 nav a{
   text-decoration: none;
   color: #FFFAFA;
 }
 main{
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   top: 0;
   left: 0;
-  position: absolute;
+  /* position: absolute; */
   color: #FFFAFA;
   display: grid;
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  overflow-y: scroll;
+  overflow-x: scroll;
+
 }
 footer{
   position: fixed;
@@ -111,7 +116,10 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* width: 10000px;
+  height: 3000px; */
 }
 .circle{
   width: 25px;
@@ -122,4 +130,852 @@ footer{
   /* background: #FFFAFA; */
   border-radius: 50%;
   transition: all 0.3s;
+  /* position: fixed; */
+  position: absolute;
+}
+.hovertext{
+  display: none;
+  position: absolte;
+  top: 50%;
+  left: 80vw;
+  z-index: 3;
+}
+.circle:hover + .hovertext{
+  display: block;
+
+}
+.coordinates{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 80vw;
+  z-index: 3;
+  color: #FFFAFA;
+}
+.circle:hover+.coordinates{
+  display: block;
+}
+/* .hovertext:before{
+  content:attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 80vw;
+  z-index: 3;
+  color: #FFFAFA;
+}
+.hovertext:hover:before{
+  opacity: 1;
+  visibility: visible;
+
+} */
+#c-001{
+  top: 33vh;
+  left: 100vw;
+}
+#c-002{
+  top: 80vh;
+  left: 27vw;
+}
+#c-003{
+  top: 50vh;
+  left:100vw;
+}
+#c-003{
+  top: 29vh;
+  left: 89vw;
+}
+#c-004{
+  top: 38vh;
+  left: 67vw;
+}
+#c-005{
+  top: 29vh;
+  left: 18vw;
+}
+#c-006{
+  top: 34vh;
+  left: 38vw;
+}
+#c-007{
+  top: 45vh;
+  left: 14vw;
+}
+#c-008{
+  top: 14vh;
+  left: 5vw;
+}
+#c-009{
+  top: 67vh;
+  left: 28vw;
+}
+#c-010{
+  top: 99vh;
+  left: 99vw;
+}
+#c-011{
+  top: 100vh;
+  left: 100vw;
+}
+#c-012{
+  top: 10vh;
+  left: 30vw;
+}
+#c-013{
+  top: 11vh;
+  left: 35vw;
+}
+#c-014{
+  top: 12vh;
+  left: 36vw;
+}
+#c-015{
+  top: 17vh;
+  left: 98vw;
+}
+#c-016{
+  top: 43vh;
+  left: 39vw;
+}
+#c-017{
+  top: 91vh;
+  left: 65vw;
+}
+#c-018{
+  top: 8vh;
+  left: 39vw;
+}
+#c-019{
+  top: 87vh;
+  left: 62vw;
+}
+#c-020{
+  top: 12vh;
+  left: 73vw;
+}
+#c-021{
+  top: 47vh;
+  left: 35vw;
+}
+#c-022{
+  top: 90vh;
+  left: 12vw;
+}
+#c-023{
+  top: 45vh;
+  left: 43vw;
+}
+#c-024{
+  top: 75vh;
+  left: 87vw;
+}
+#c-025{
+  top: 25vh;
+  left: 1vw;
+}
+#c-026{
+  top: 68vh;
+  left: 3vw;
+}
+#c-027{
+  top: 2vh;
+  left: 11vw;
+}
+#c-028{
+  top: 29vh;
+  left: 24vw;
+}
+#c-029{
+  top: 90vh;
+  left: 14vw;
+}
+#c-030{
+  top: 55vh;
+  left: 50vw;
+}
+#c-031{
+  top: 56vh;
+  left: 49vw;
+}
+#c-032{
+  top: 52vh;
+  left: 69vw;
+}
+#c-033{
+  top: 40vh;
+  left: 49vw;
+}
+#c-034{
+  top: 65vh;
+  left: 80vw;
+}
+#c-035{
+  top: 25vh;
+  left: 70vw;
+}
+#c-036{
+  top: 10vh;
+  left: 80vw;
+}
+#c-037{
+  top: 78vh;
+  left: 87vw;
+}
+#c-038{
+  top: 29vh;
+  left: 70vw;
+}
+#c-039{
+  top: 96vh;
+  left: 86vw;
+}
+#c-040{
+  top: 13vh;
+  left: 80vw;
+}
+#c-041{
+  top: 81vh;
+  left: 10vw;
+}
+#c-042{
+  top: 5vh;
+  left: 57vw;
+}
+#c-043{
+  top: 68vh;
+  left: 38vw;
+}
+#c-044{
+  top: 45vh;
+  left: 32vw;
+}
+#c-045{
+  top: 69vh;
+  left: 44vw;
+}
+#c-046{
+  top: 73vh;
+  left: 57vw;
+}
+#c-047{
+  top: 59vh;
+  left: 59vw;
+}
+#c-048{
+  top: 2vh;
+  left: 42vw;
+}
+#c-049{
+  top: 81vh;
+  left: 49vw;
+}
+#c-50{
+  top: 25vh;
+  left: 73vw;
+}
+#c-051{
+  top: 10vh;
+  left: 20vw;
+}
+#c-052{
+  top: 28vh;
+  left: 0vw;
+}
+#c-053{
+  top: 72vh;
+  left: 68vw;
+}
+#c-054{
+  top: 78vh;
+  left: 30vw;
+}
+#c-055{
+  top: 99vh;
+  left: 22vw;
+}
+#c-056{
+  top: 40vh;
+  left: 20vw;
+}
+#c-057{
+  top: 88vh;
+  left: 22vw;
+}
+#c-058{
+  top: 58vh;
+  left: 83vw;
+}
+#c-059{
+  top: 35vh;
+  left: 61vw;
+}
+#c-060{
+  top: 36vh;
+  left: 89vw;
+}
+#c-061{
+  top: 42vh;
+  left: 84vw;
+}
+#c-062{
+  top: 44vh;
+  left: 71vw;
+}
+#c-063{
+  top: 92vh;
+  left: 39vw;
+}
+#c-064{
+  top: 16vh;
+  left: 70vw;
+}
+#c-065{
+  top: 85vh;
+  left: 52vw;
+}
+#c-066{
+  top: 78vh;
+  left: 20vw;
+}
+#c-067{
+  top: 57vh;
+  left: 58vw;
+}
+#c-068{
+  top: 45vh;
+  left: 55vw;
+}
+#c-069{
+  top: 58vh;
+  left: 53vw;
+}
+#c-070{
+  top: 77vh;
+  left: 45vw;
+}
+#c-071{
+  top: 71vh;
+  left: 39vw;
+}
+#c-072{
+  top: 49vh;
+  left: 72vw;
+}
+#c-073{
+  top: 48vh;
+  left: 73vw;
+}
+#c-074{
+  top: 74vh;
+  left: 58vw;
+}
+#c-075{
+  top: 75vh;
+  left: 24vw;
+}
+#c-076{
+  top: 98vh;
+  left: 76vw;
+}
+#c-077{
+  top: 77vh;
+  left: 39vw;
+}
+#c-078{
+  top: 15vh;
+  left: 78vw;
+}
+#c-079{
+  top: 79vh;
+  left: 40vw;
+}
+#c-080{
+  top: 80vh;
+  left: 56vw;
+}
+#c-081{
+  top: 35vh;
+  left: 81vw;
+}
+#c-082{
+  top: 82vh;
+  left: 50vw;
+}
+#c-083{
+  top: 95vh;
+  left: 83vw;
+}
+#c-084{
+  top: 68vh;
+  left: 84vw;
+}
+#c-85{
+  top: 85vh;
+  left: 52vw;
+}
+#c-086{
+  top: 69vh;
+  left: 86vw;
+}
+#c-087{
+  top: 87vh;
+  left: 29vw;
+}
+#c-088{
+  top: 13vh;
+  left: 88vw;
+}
+#c-089{
+  top: 50vh;
+  left: 89vw;
+}
+#c-090{
+  top: 38vh;
+  left: 90vw;
+}
+#c-091{
+  top: 76vh;
+  left: 91vw;
+}
+#c-092{
+  top: 92vh;
+  left: 30vw;
+}
+#c-093{
+  top: 63vh;
+  left: 93vw;
+}
+#c-094{
+  top: 20vh;
+  left: 94vw;
+}
+#c-095{
+  top: 95vh;
+  left: 68vw;
+}
+#c-096{
+  top: 42vh;
+  left: 96vw;
+}
+#c-097{
+  top: 85vh;
+  left: 97vw;
+}
+#c-098{
+  top: 98vh;
+  left: 47vw;
+}
+#c-099{
+  top: 55vh;
+  left: 99vw;
+}
+#c-100{
+  top: 100vh;
+  left: 0vw;
+}
+#c-101{
+  top: 111vh;
+  left: 111vw;
+}
+#c-102{
+  top: 102vh;
+  left: 98vw;
+}
+#c-103{
+  top: 11vh;
+  left: 103vw;
+}
+#c-104{
+  top: 104vh;
+  left: 78vw;
+}
+#c-105{
+  top: 105vh;
+  left: 28vw;
+}
+#c-106{
+  top: 19vh;
+  left: 106vw;
+}
+#c-107{
+  top: 107vh;
+  left: 30vw;
+}
+#c-108{
+  top: 100vh;
+  left: 108vw;
+}
+#c-109{
+  top: 81vh;
+  left: 109vw;
+}
+#c-110{
+  top: 110vh;
+  left: 40vw;
+}
+#c-111{
+  top: 111vh;
+  left: 56vw;
+}
+#c-112{
+  top: 84vh;
+  left: 112vw;
+}
+#c-113{
+  top: 113vh;
+  left: 29vw;
+}
+#c-114{
+  top: 72vh;
+  left: 114vw;
+}
+#c-115{
+  top: 20vh;
+  left: 115vw;
+}
+#c-116{
+  top: 110vh;
+  left: 50vw;
+}
+#c-117{
+  top: 117vh;
+  left: 90vw;
+}
+#c-118{
+  top: 60vh;
+  left: 118vw;
+}
+#c-119{
+  top: 47vh;
+  left: 119vw;
+}
+#c-120{
+  top: 120vh;
+  left:43vw;
+}
+#c-121{
+  top: 120vh;
+  left: 30vw;
+}
+#c-122{
+  top: 4vh;
+  left: 120vw;
+}
+#c-123{
+  top: 16vh;
+  left: 90vw;
+}
+#c-124{
+  top: 76vh;
+  left: 24vw;
+}
+#c-125{
+  top: 100vh;
+  left: 90vw;
+}
+#c-126{
+  top: 5vh;
+  left: 26vw;
+}
+#c-127{
+  top: 8vh;
+  left: 49vw;
+}
+#c-128{
+  top: 35vh;
+  left: 110vw;
+}
+#c-129{
+  top: 21vh;
+  left: 120vw;
+}
+#c-130{
+  top: 34vh;
+  left: 43vw;
+}
+#c-131{
+  top: 31vh;
+  left: 10vw;
+}
+#c-132{
+  top: 21vh;
+  left: 32vw;
+}
+#c-133{
+  top: 33vh;
+  left: 40vw;
+}
+#c-134{
+  top: 2vh;
+  left: 34vw;
+}
+#c-135{
+  top: 35vh;
+  left: -20vw;
+}
+#c-136{
+  top: -20vh;
+  left: 36vw;
+}
+#c-137{
+  top: 37vh;
+  left: 18vw;
+}
+#c-138{
+  top: -10vh;
+  left: 120vw;
+}
+#c-139{
+  top: -5vh;
+  left: 39vw;
+}
+#c-140{
+  top: 40vh;
+  left: -20vw;
+}
+#c-141{
+  top: 21vh;
+  left: 41vw;
+}
+#c-142{
+  top: 54vh;
+  left: 42vw;
+}
+#c-143{
+  top: 43vh;
+  left: -19vw;
+}
+#c-144{
+  top: -9vh;
+  left: 44vw;
+}
+#c-145{
+  top: 68vh;
+  left: 45vw;
+}
+#c-146{
+  top: 46vh;
+  left: -8vw;
+}
+#c-147{
+  top: 109vh;
+  left: 47vw;
+}
+#c-148{
+  top: 48vh;
+  left: 77vw;
+}
+#c-149{
+  top: 110vh;
+  left: 49vw;
+}
+#c-150{
+  top: 50vh;
+  left: 101vw;
+}
+#c-151{
+  top: 51vh;
+  left: 8vw;
+}
+#c-152{
+  top: 22vh;
+  left: 52vw;
+}
+#c-153{
+  top: 103vh;
+  left: 113vw;
+}
+#c-154{
+  top: 54vh;
+  left: 102vw;
+}
+#c-155{
+  top: 118vh;
+  left: 55vw;
+}
+#c-156{
+  top: 56vh;
+  left: 4vw;
+}
+#c-157{
+  top: 104vh;
+  left: 57vw;
+}
+#c-158{
+  top: -19vh;
+  left: 58vw;
+}
+#c-159{
+  top: 59vh;
+  left: 100vw;
+}
+#c-160{
+  top: 60vh;
+  left: 16vw;
+}
+#c-161{
+  top: 61vh;
+  left: 11vw;
+}
+#c-162{
+  top: 2vh;
+  left: 62vw;
+}
+#c-163{
+  top: 63vh;
+  left: -2vw;
+}
+#c-164{
+  top: 97vh;
+  left: 64vw;
+}
+#c-165{
+  top: -5vh;
+  left: 65vw;
+}
+#c-166{
+  top: 66vh;
+  left: 18vw;
+}
+#c-167{
+  top: 111vh;
+  left: 67vw;
+}
+#c-168{
+  top: 1vh;
+  left: 68vw;
+}
+#c-169{
+  top: -16vh;
+  left: 69vw;
+}
+#c-170{
+  top: 70vh;
+  left: -3vw;
+}
+#c-171{
+  top: 71vh;
+  left: 17vw;
+}
+#c-172{
+  top: 31vh;
+  left: 72vw;
+}
+#c-173{
+  top: 102vh;
+  left: 73vw;
+}
+#c-174{
+  top: -8vh;
+  left: 74vw;
+}
+#c-175{
+  top: 75vh;
+  left: 102vw;
+}
+#c-176{
+  top: 16vh;
+  left: 76vw;
+}
+#c-177{
+  top: 17vh;
+  left: 77vw;
+}
+#c-178{
+  top: 78vh;
+  left: 94vw;
+}
+#c-179{
+  top: -15vh;
+  left: 79vw;
+}
+#c-180{
+  top: 80vh;
+  left: -12vw;
+}
+#c-180{
+  top: 80vh;
+  left: -12vw;
+}
+#c-181{
+  top: 81vh;
+  left: -10vw;
+}
+#c-182{
+  top: 90vh;
+  left: 82vw;
+}
+#c-183{
+  top: 53vh;
+  left: 83vw;
+}
+#c-184{
+  top: 84vh;
+  left: 112vw;
+}
+#c-185{
+  top: 42vh;
+  left: 85vw;
+}
+#c-186{
+  top: 86vh;
+  left: 109vw;
+}
+#c-187{
+  top: 87vh;
+  left: 20vw;
+}
+#c-188{
+  top: 100vh;
+  left: 88vw;
+}
+#c-189{
+  top: 12vh;
+  left: 89vw;
+}
+#c-190{
+  top: 2vh;
+  left: 90vw;
+}
+#c-191{
+  top: 18vh;
+  left: 91vw;
+}
+#c-192{
+  top: 92vh;
+  left: 10vw;
+}
+#c-193{
+  top: -10vh;
+  left: 93vw;
+}
+#c-194{
+  top: 94vh;
+  left: 116vw;
+}
+#c-195{
+  top: 113vh;
+  left: 95vw;
+}
+#c-196{
+  top: -12vh;
+  left: 96vw;
+}
+#c-197{
+  top: 97vh;
+  left: -18vw;
+}
+#c-198{
+  top: -15vh;
+  left: 98vw;
+}
+#c-199{
+  top: 102vh;
+  left: 99vw;
+}
+#c-200{
+  top: 0vh;
+  left: 0vw;
 }

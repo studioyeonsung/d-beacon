@@ -14,7 +14,7 @@
   <title>D-D-D</title>
 </head>
 
-<body id="bg">
+<body id="bg" onmousemove="getCursorPosition(event)">
   <header>
     <div id="title"><a href="index.html">D: D-D-D</a></div>
   </header>
@@ -26,7 +26,207 @@
   </nav>
   <main>
     <div class="content">
-      <div class="circle"></div>
+      <div class="circle" id="c-001"><span class="hovertext" title="coordinates"></span></div>
+      <div class="circle" id="c-002"><span class="hovertext" title="coordinates"></span></div>
+      <div class="circle" id="c-003"><span class="hovertext" title="coordinates"></span></div>
+      <div class="circle" id="c-004"></div>
+      <div class="circle" id="c-005"></div>
+      <div class="circle" id="c-006"></div>
+      <div class="circle" id="c-007"></div>
+      <div class="circle" id="c-008"></div>
+      <div class="circle" id="c-009"></div>
+      <div class="circle" id="c-010"></div>
+      <div class="circle" id="c-011"></div>
+      <div class="circle" id="c-012"></div>
+      <div class="circle" id="c-013"></div>
+      <div class="circle" id="c-014"></div>
+      <div class="circle" id="c-015"></div>
+      <div class="circle" id="c-016"></div>
+      <div class="circle" id="c-017"></div>
+      <div class="circle" id="c-018"></div>
+      <div class="circle" id="c-019"></div>
+      <div class="circle" id="c-020"></div>
+      <div class="circle" id="c-021"></div>
+      <div class="circle" id="c-022"></div>
+      <div class="circle" id="c-023"></div>
+      <div class="circle" id="c-024"></div>
+      <div class="circle" id="c-025"></div>
+      <div class="circle" id="c-026"></div>
+      <div class="circle" id="c-027"></div>
+      <div class="circle" id="c-028"></div>
+      <div class="circle" id="c-029"></div>
+      <div class="circle" id="c-030"></div>
+      <div class="circle" id="c-031"></div>
+      <div class="circle" id="c-032"></div>
+      <div class="circle" id="c-033"></div>
+      <div class="circle" id="c-034"></div>
+      <div class="circle" id="c-035"></div>
+      <div class="circle" id="c-036"></div>
+      <div class="circle" id="c-037"></div>
+      <div class="circle" id="c-038"></div>
+      <div class="circle" id="c-039"></div>
+      <div class="circle" id="c-040"></div>
+      <div class="circle" id="c-041"></div>
+      <div class="circle" id="c-042"></div>
+      <div class="circle" id="c-043"></div>
+      <div class="circle" id="c-044"></div>
+      <div class="circle" id="c-045"></div>
+      <div class="circle" id="c-046"></div>
+      <div class="circle" id="c-047"></div>
+      <div class="circle" id="c-048"></div>
+      <div class="circle" id="c-049"></div>
+      <div class="circle" id="c-050"></div>
+      <div class="circle" id="c-051"></div>
+      <div class="circle" id="c-052"></div>
+      <div class="circle" id="c-053"></div>
+      <div class="circle" id="c-054"></div>
+      <div class="circle" id="c-055"></div>
+      <div class="circle" id="c-056"></div>
+      <div class="circle" id="c-057"></div>
+      <div class="circle" id="c-058"></div>
+      <div class="circle" id="c-059"></div>
+      <div class="circle" id="c-060"></div>
+      <div class="circle" id="c-061"></div>
+      <div class="circle" id="c-062"></div>
+      <div class="circle" id="c-063"></div>
+      <div class="circle" id="c-064"></div>
+      <div class="circle" id="c-065"></div>
+      <div class="circle" id="c-066"></div>
+      <div class="circle" id="c-067"></div>
+      <div class="circle" id="c-068"></div>
+      <div class="circle" id="c-069"></div>
+      <div class="circle" id="c-070"></div>
+      <div class="circle" id="c-071"></div>
+      <div class="circle" id="c-072"></div>
+      <div class="circle" id="c-073"></div>
+      <div class="circle" id="c-074"></div>
+      <div class="circle" id="c-075"></div>
+      <div class="circle" id="c-076"></div>
+      <div class="circle" id="c-077"></div>
+      <div class="circle" id="c-078"></div>
+      <div class="circle" id="c-079"></div>
+      <div class="circle" id="c-080"></div>
+      <div class="circle" id="c-081"></div>
+      <div class="circle" id="c-082"></div>
+      <div class="circle" id="c-083"></div>
+      <div class="circle" id="c-084"></div>
+      <div class="circle" id="c-085"></div>
+      <div class="circle" id="c-086"></div>
+      <div class="circle" id="c-087"></div>
+      <div class="circle" id="c-088"></div>
+      <div class="circle" id="c-089"></div>
+      <div class="circle" id="c-090"></div>
+      <div class="circle" id="c-091"></div>
+      <div class="circle" id="c-092"></div>
+      <div class="circle" id="c-093"></div>
+      <div class="circle" id="c-094"></div>
+      <div class="circle" id="c-095"></div>
+      <div class="circle" id="c-096"></div>
+      <div class="circle" id="c-097"></div>
+      <div class="circle" id="c-098"></div>
+      <div class="circle" id="c-099"></div>
+      <div class="circle" id="c-100"></div>
+
+      <div class="circle" id="c-101"></div>
+      <div class="circle" id="c-102"></div>
+      <div class="circle" id="c-103"></div>
+      <div class="circle" id="c-104"></div>
+      <div class="circle" id="c-105"></div>
+      <div class="circle" id="c-106"></div>
+      <div class="circle" id="c-107"></div>
+      <div class="circle" id="c-108"></div>
+      <div class="circle" id="c-109"></div>
+      <div class="circle" id="c-110"></div>
+      <div class="circle" id="c-111"></div>
+      <div class="circle" id="c-112"></div>
+      <div class="circle" id="c-113"></div>
+      <div class="circle" id="c-114"></div>
+      <div class="circle" id="c-115"></div>
+      <div class="circle" id="c-116"></div>
+      <div class="circle" id="c-117"></div>
+      <div class="circle" id="c-118"></div>
+      <div class="circle" id="c-119"></div>
+      <div class="circle" id="c-120"></div>
+      <div class="circle" id="c-121"></div>
+      <div class="circle" id="c-122"></div>
+      <div class="circle" id="c-123"></div>
+      <div class="circle" id="c-124"></div>
+      <div class="circle" id="c-125"></div>
+      <div class="circle" id="c-126"></div>
+      <div class="circle" id="c-127"></div>
+      <div class="circle" id="c-128"></div>
+      <div class="circle" id="c-129"></div>
+      <div class="circle" id="c-130"></div>
+      <div class="circle" id="c-131"></div>
+      <div class="circle" id="c-132"></div>
+      <div class="circle" id="c-133"></div>
+      <div class="circle" id="c-134"></div>
+      <div class="circle" id="c-135"></div>
+      <div class="circle" id="c-136"></div>
+      <div class="circle" id="c-137"></div>
+      <div class="circle" id="c-138"></div>
+      <div class="circle" id="c-139"></div>
+      <div class="circle" id="c-140"></div>
+      <div class="circle" id="c-141"></div>
+      <div class="circle" id="c-142"></div>
+      <div class="circle" id="c-143"></div>
+      <div class="circle" id="c-144"></div>
+      <div class="circle" id="c-145"></div>
+      <div class="circle" id="c-146"></div>
+      <div class="circle" id="c-147"></div>
+      <div class="circle" id="c-148"></div>
+      <div class="circle" id="c-149"></div>
+      <div class="circle" id="c-150"></div>
+      <div class="circle" id="c-151"></div>
+      <div class="circle" id="c-152"></div>
+      <div class="circle" id="c-153"></div>
+      <div class="circle" id="c-154"></div>
+      <div class="circle" id="c-155"></div>
+      <div class="circle" id="c-156"></div>
+      <div class="circle" id="c-157"></div>
+      <div class="circle" id="c-158"></div>
+      <div class="circle" id="c-159"></div>
+      <div class="circle" id="c-160"></div>
+      <div class="circle" id="c-161"></div>
+      <div class="circle" id="c-162"></div>
+      <div class="circle" id="c-163"></div>
+      <div class="circle" id="c-164"></div>
+      <div class="circle" id="c-165"></div>
+      <div class="circle" id="c-166"></div>
+      <div class="circle" id="c-167"></div>
+      <div class="circle" id="c-168"></div>
+      <div class="circle" id="c-169"></div>
+      <div class="circle" id="c-170"></div>
+      <div class="circle" id="c-171"></div>
+      <div class="circle" id="c-172"></div>
+      <div class="circle" id="c-173"></div>
+      <div class="circle" id="c-174"></div>
+      <div class="circle" id="c-175"></div>
+      <div class="circle" id="c-176"></div>
+      <div class="circle" id="c-177"></div>
+      <div class="circle" id="c-178"></div>
+      <div class="circle" id="c-179"></div>
+      <div class="circle" id="c-180"></div>
+      <div class="circle" id="c-181"></div>
+      <div class="circle" id="c-182"></div>
+      <div class="circle" id="c-183"></div>
+      <div class="circle" id="c-184"></div>
+      <div class="circle" id="c-185"></div>
+      <div class="circle" id="c-186"></div>
+      <div class="circle" id="c-187"></div>
+      <div class="circle" id="c-188"></div>
+      <div class="circle" id="c-189"></div>
+      <div class="circle" id="c-190"></div>
+      <div class="circle" id="c-191"></div>
+      <div class="circle" id="c-192"></div>
+      <div class="circle" id="c-193"></div>
+      <div class="circle" id="c-194"></div>
+      <div class="circle" id="c-195"></div>
+      <div class="circle" id="c-196"></div>
+      <div class="circle" id="c-197"></div>
+      <div class="circle" id="c-198"></div>
+      <div class="circle" id="c-199"></div><div class="hovertext" data-hover="coordinates">text</div>
+      <div class="circle" id="c-200"></div><span title="coordinates" class="hovertext">text <img src="images/stations/200.png" alt="200.png" width="100%"></span>
     </div>
 
   </main>
@@ -35,16 +235,26 @@
       <div id="clock"></div>
       <script src="app.js"></script>
     </div>
-    <div class="footer-list" id="screen-log"></div>
+    <div class="footer-list" id="screen-log">
+      <span id="cursor-position-x"></span> N / <span id="cursor-position-y"></span> E
+    </div>
     <script>
-    let screenLog = document.querySelector('#screen-log');
-    document.addEventListener('mousemove', logKey);
-
-    function logKey(e) {
-      screenLog.innerText = `
-        ${e.screenX}'N / ${e.screenY}'E
-        `;
+    // var e = document.getElementByClassName('hovertext');
+    //
+    // e.onmouseover = function() {
+    //   document.getElementByClassName('hovertext').style.display = 'block';
+    // }
+    //
+    // e.onmouseout = function() {
+    //   document.getElementByClassName('hovertext').style.display = 'none';
+    // }
+    function getCursorPosition(event) {
+      document.getElementById("cursor-position-x").textContent = event.clientX;
+      document.getElementById("cursor-position-y").textContent = event.clientY;
     }
+
+    // var span_Text = document.getElementById("span_Id").innerText;
+    // console.log(span_Text)
     </script>
   </footer>
 </body>
