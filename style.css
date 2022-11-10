@@ -58,6 +58,7 @@ header{
   background-color: #FFFAFA;
   color: #000000;
   font-size: 1.5rem;
+  z-index: 6;
 }
 header a{
   text-decoration: none;
@@ -77,6 +78,7 @@ nav{
   justify-content: space-around;
   font-size: 1.5rem;
   position: fixed;
+  z-index: 6;
 }
 nav a{
   text-decoration: none;
@@ -107,6 +109,7 @@ footer{
   padding: 10px;
   margin: 10px;
   font-size: 1.2rem;
+  z-index: 5;
 }
 .content{
   --positionX: 0;
@@ -132,17 +135,47 @@ footer{
   transition: all 0.3s;
   /* position: fixed; */
   position: absolute;
+  z-index: 5;
+  background-color: #000000;
 }
 .hovertext{
   display: none;
-  position: absolte;
-  top: 50%;
-  left: 80vw;
-  z-index: 3;
+  position: fixed;
+  z-index: 4;
+  /* top: 60vh;
+  left: 60vw;
+  z-index: 3; */
+}
+.hovertext img{
+  position: fixed;
+  top: 50vh;
+  left: 60vw;
+  width: 800px;
+  filter: drop-shadow(1px 1px 10px #69696);
 }
 .circle:hover + .hovertext{
   display: block;
+}
+.info{
+  /* display: none; */
+  position: fixed;
+  top: 40vh;
+  left: 20vw;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  line-height: 1.5rem;
+  border: 1px double #000000;
+  background-color: #FFFAFA;
+  color: #000000;
+  z-index: 4;
 
+}
+.circle:hover +.info{
+  display: inline-block;
+}
+.circle:hover{
+  background-color: #FFFAFA;
 }
 .coordinates{
   display: none;
